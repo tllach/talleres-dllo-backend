@@ -13,10 +13,22 @@ function desglosarString(word, option){
         }
     });
 
-    if (option== "vocales"){
+    if (option == "vocales"){
         return countvocales
-    }else if(option== "consonantes"){
-            return countconsonantes
+    }else if(option == "consonantes"){
+        return countconsonantes
     }
 }
+
+function twoSum(lst, num){
+    for (i = 0; i < lst.length; i++){
+        for (j = i+1; j < lst.length; j++){
+            if(lst[i] + lst[j] == num){
+                return [i, j]
+            }
+        }
+    }
+    return "No hay solución"
+}
+
 
